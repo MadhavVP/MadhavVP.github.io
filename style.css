@@ -1,4 +1,3 @@
-
 :root {
   --bg: #0a1f44f2;
   --second: #4E4187;
@@ -16,16 +15,15 @@
 
 body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  background-color: var(--bg); /* Navy Blue */
+  background-color: var(--bg);
+  /* Navy Blue */
   color: #ffffff;
   line-height: 1.6;
-background-image: repeating-linear-gradient(
-    45deg,                
-    rgba(102, 217, 255, 0.1) 0px, 
-    rgba(102, 217, 255, 0.1) 2px, 
-    transparent 2px, 
-    transparent 12px
-  );
+  background-image: repeating-linear-gradient(45deg,
+      rgba(102, 217, 255, 0.1) 0px,
+      rgba(102, 217, 255, 0.1) 2px,
+      transparent 2px,
+      transparent 12px);
 }
 
 nav {
@@ -47,7 +45,8 @@ nav {
 }
 
 .hamburger {
-  display: none; /* hidden on desktop */
+  display: none;
+  /* hidden on desktop */
   flex-direction: column;
   justify-content: space-between;
   width: 24px;
@@ -79,7 +78,7 @@ nav ul {
 /* Responsive: On small screens */
 @media (max-width: 768px) {
   nav {
-    padding: 0.5rem 1rem;
+    display: none;
   }
 
   .hamburger {
@@ -87,7 +86,8 @@ nav ul {
   }
 
   nav ul {
-    display: none; /* hidden by default */
+    display: none;
+    /* hidden by default */
     flex-direction: column;
     background: var(--bg);
     border: 2px solid var(--second);
@@ -98,7 +98,8 @@ nav ul {
   }
 
   nav ul.show {
-    display: flex; /* show when toggled */
+    display: flex;
+    /* show when toggled */
   }
 }
 
@@ -128,14 +129,14 @@ section {
   padding: 3rem;
 
   /* Slash background */
-  background-image: repeating-linear-gradient(
-    -35deg,                /* diagonal slashes */
-    rgba(102, 217, 255, 0.1) 0px, 
-    rgba(102, 217, 255, 0.1) 2px, 
-    transparent 2px, 
-    transparent 12px
-  );
-  background-color: #0a1f44cc; /* keep navy-blue base */
+  background-image: repeating-linear-gradient(-35deg,
+      /* diagonal slashes */
+      rgba(102, 217, 255, 0.1) 0px,
+      rgba(102, 217, 255, 0.1) 2px,
+      transparent 2px,
+      transparent 12px);
+  background-color: #0a1f44cc;
+  /* keep navy-blue base */
 }
 
 .header-section {
@@ -150,7 +151,8 @@ section h1 {
   color: var(--second);
 }
 
-section p, section li {
+section p,
+section li {
   max-width: 700px;
   text-align: center;
   margin-bottom: 0.5rem;
@@ -266,7 +268,8 @@ footer {
 }
 
 .project-card:hover .project-image img {
-  transform: scale(1.1); /* zoom effect */
+  transform: scale(1.1);
+  /* zoom effect */
 }
 
 /* Info section */
@@ -287,13 +290,91 @@ footer {
   color: var(--second);
 }
 
+@media (max-width: 500px) {
+
+  .academics-section {
+    display: none;
+  }
+
+  section {
+    font-size: 3rem;
+    margin: 1rem;
+    padding: 1rem;
+  }
+  
+  .skills {
+    display: none;
+  }
+
+  .about-text .name {
+    margin: 0.5rem 3rem;
+    font-size: 3rem;
+  }
+
+  .about-text .intro {
+    font-size: 2rem;
+    color: #ffffff;
+    margin-left: 3rem;
+    margin-top: -1rem;
+  }
+
+  .about-text .tagline {
+    font-size: 1rem;
+    color: #cccccc;
+    margin-top: 1rem;
+    margin-left: 3rem;
+    margin-right: 3rem;}
+
+  .social-buttons {
+    display: flex;
+    gap: .2rem;
+    margin-top: 1rem;
+    margin-bottom: -3rem;
+    justify-content: center;
+  }
+  .social-btn i {
+    width: 50px;
+    height: 50px;
+    font-size: 1rem;
+  }
+  .project-info h2 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+  .project-info p {
+    font-size: 0.9rem;
+    overflow-y: auto;
+  }
+
+  
+}
+
 @media (max-width: 900px) {
   .projects-grid {
-    grid-template-columns: 1fr; /* stack cards vertically */
+    grid-template-columns: 1fr;
+    /* stack cards vertically */
+  }
+
+  .about-text .intro {
+    margin-left: 3rem;
+  }
+
+  .about-text .tagline {
+    margin-left: 3rem;
+    margin-right: 3rem;
+  }
+
+
+  .about-text .name {
+    font-size: 3rem;
+    margin: 0.5rem 3rem;
   }
 
   .project-card {
-    min-height: auto; /* allow height to adjust naturally */
+    max-width: fit-content;
+    gap: 2;
+    min-height: auto;
+    /* allow height to adjust naturally */
   }
 
   .project-info p {
@@ -307,7 +388,8 @@ footer {
   font-size: 0.95rem;
   line-height: 1.4;
   min-height: 150px;
-  overflow-y: auto;}
+  overflow-y: auto;
+}
 
 .project-btn-div {
   display: flex;
@@ -340,12 +422,10 @@ footer {
   left: -75%;
   width: 20%;
   height: 100%;
-  background: linear-gradient(
-    120deg,
-    rgba(255, 255, 255, 0.0) 0%,
-    rgba(255, 255, 255, 0.4) 50%,
-    rgba(255, 255, 255, 0.0) 100%
-  );
+  background: linear-gradient(120deg,
+      rgba(255, 255, 255, 0.0) 0%,
+      rgba(255, 255, 255, 0.4) 50%,
+      rgba(255, 255, 255, 0.0) 100%);
   /* border-radius: 50%; */
   transform: skewX(-25deg);
 }
@@ -354,6 +434,7 @@ footer {
   0% {
     left: -75%;
   }
+
   100% {
     left: 125%;
   }
@@ -388,13 +469,14 @@ footer {
   width: 50px;
   height: 50px;
   font-size: 4rem;
-  transition: color 0.3s; 
+  transition: color 0.3s;
 }
 
 .social-btn:hover {
   color: var(--gray);
   transform: color 0.3s;
-  transform: scale(1.1); /* Slight zoom effect */
+  transform: scale(1.1);
+  /* Slight zoom effect */
 }
 
 .academics-grid {
@@ -432,7 +514,8 @@ footer {
 }
 
 .courses-list.show {
-  max-height: 1000px; /* large enough to fit all items */
+  max-height: 1000px;
+  /* large enough to fit all items */
 }
 
 .toggle-btn {
@@ -454,13 +537,14 @@ footer {
 }
 
 .toggle-btn[aria-expanded="true"] i {
-  transform: rotate(180deg); /* rotate chevron when open */
+  transform: rotate(180deg);
+  /* rotate chevron when open */
 }
 
 .academic-card-header {
-    display: flex;                
-    justify-content: space-between;
-    align-items: center;           
-    padding: 1rem;
-    border-bottom: 2px solid var(--second); 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  border-bottom: 2px solid var(--second);
 }
