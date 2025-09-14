@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Madhav's Website</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-container">
+            <button class="hamburger" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul>
+                <li><a href="#about">Home</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#academia">Academics</a></li>
+                <li><a href="#about">Contact Me</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Sections -->
+    <section id="about">
+        <div class="about-text">
+            <h2 class="intro">Hi! I'm</h2>
+            <h1 class="name">Madhav V.</h1>
+            <p class="tagline">I like learning new things and solving interesting problems</p>
+
+            <div class="social-buttons">
+                <!-- Email -->
+                <a href="mailto:madhavsv05@gmail.com" class="social-btn" title="Email">
+                    <i class="fas fa-envelope"></i>
+                </a>
+
+                <!-- GitHub -->
+                <a href="https://github.com/MadhavVP" target="_blank" class="social-btn" title="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+
+                <!-- LinkedIn -->
+                <a href="https://linkedin.com/in/MadhavVP" target="_blank" class="social-btn" title="LinkedIn">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+
+                <!-- Resume -->
+                <a href="./Madhav V. - Resume.pdf" target="_blank" class="social-btn" title="Resume">
+                    <i class="fas fa-file-alt"></i>
+                </a>
+            </div>
+        </div>
+
+        <div class="skills">
+            <div class="skill-box">Java</div>
+            <div class="skill-box">C/C++</div>
+            <div class="skill-box">Python</div>
+            <div class="skill-box">SQL</div>
+            <div class="skill-box">x86-64 Assembly</div>
+            <div class="skill-box">C#</div>
+            <div class="skill-box">Bash</div>
+            <div class="skill-box">JavaScript</div>
+            <div class="skill-box">TypeScript</div>
+            <div class="skill-box">HTML/CSS</div>
+            <div class="skill-box">Toad</div>
+            <div class="skill-box">Fusion 360</div>
+            <div class="skill-box">GitHub</div>
+            <div class="skill-box">GDB</div>
+            <div class="skill-box">Splunk</div>
+            <div class="skill-box">Spring</div>
+            <div class="skill-box">Qiskit</div>
+            <div class="skill-box">JUnit</div>
+            <div class="skill-box">Hibernate</div>
+            <div class="skill-box">React</div>
+            <div class="skill-box">Lex & Yacc</div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h1 class="header-section">Projects</h1>
+        <p>Some of the shenanigans I get up to</p>
+        <div class="projects-grid">
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="./sphero.png" alt="Sphero">
+                </div>
+                <div class="project-info">
+                    <h2>Sphero Swarm</h2>
+                    <p>My friends and I are working on using a ton of Sphero Bolts to simulate chemical reactions! The
+                        basic idea is to have these Spheros moving 'randomly'
+                        around a confined space, and when they collide, they 'bond' together to form molecules. It's a
+                        fun way to visualize how atoms interact and form compounds.
+                        We're pretty close to getting it all working, and once we do, we're planning to display it at
+                        Imagination Station (a science center in Lafayette).
+                        Hopefully, it'll get some kids interested in CS and chemistry!
+                    </p>
+                    <div class="project-btn-div">
+                        <a href="https://github.com/purdue-arc/sphero-swarm" target="_blank" class="project-btn">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="./Mash.png" alt="Mash">
+                </div>
+                <div class="project-info">
+                    <h2>Mash</h2>
+                    <p>Mash is the name I gave to the shell interpreter I built for my Systems Programming class.
+                        It's fully functional, memory-safe command-line interface that allows users to just about
+                        anything they can do with Bash.
+                        I've implemented features like piping, background execution, built-in commands like 'cd' and
+                        'exit',
+                        wildcarding, running subshells, command piping, io redirection, process substitution,
+                        environment
+                        variable expansion/support, and line editing.
+                    </p>
+                    <div class="project-btn-div">
+                        <a href="https://github.com/MadhavVP/mash" target="_blank" class="project-btn">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="./sphero.png" alt="Sphero">
+                </div>
+                <div class="project-info">
+                    <h2>ChemECar</h2>
+                    <p>I'm the Mechanical Lead for Purdue's ChemECar team! Every year, we build a small car powered by 2
+                        chemical reactions: 1 to propel the car and 1 to figure out when the car should stop.
+                        As the Mechanical Lead, I not only program the Arduino microcontroller to figure out when the
+                        car should stop,
+                        but my team also designs and make the car! This has given me a lot of experience with CAD
+                        software, specifically Fusion 360.
+                        Since we build a new car every year, I've also gotten to work with some really, really cool
+                        manufacturing tools (ex. Last semester, I got
+                        the opportunity to print something on the Formlabs Fuse 1. I've always been a 3d printing nerd,
+                        so getting the chance to use
+                        an SLS machine was a dream come true)
+                    </p>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="academia">
+        <h1 class="header-section">Academics</h1>
+        <p>I'm a junior at Purdue University, majoring in Computer Science Honors with a minor in Mathematics. My GPA is
+            4.0</p>
+        <div class="academics-grid">
+            <div class="academic-card">
+                <div class="academic-card-header">
+                    <h2>Honors & Awards</h2>
+                </div>
+                <ul>
+                    <li>Purdue University Dean's List (2023-Present)</li>
+                    <li>Purdue University Semester Honors (2023-Prfesent)</li>
+                    <li>National Merit Scholar (2023)</li>
+                    <!-- <li>AP Scholar with Distinction (2019)</li> -->
+                </ul>
+            </div>
+
+            <div class="academic-card">
+                <div class="academic-card-header">
+                    <h2>Extracurriculars</h2>
+                </div>
+                <ul>
+                    <li>Mechanical Lead, Purdue ChemECar Team (2024-Present)</li>
+                    <li>Board Member, Purdue CS Student Board (2025-Present)</li>
+                    <li>Algorithms Lead, Purdue Sphero Swarm (2024-Present)</li>
+                    <li>CS Mentor (2024-2025)</li>
+                    <li>Volunteer, Meals From the Heartland (2019-Present)</li>
+                </ul>
+            </div>
+
+            <div class="academic-card">
+                <div class="academic-card-header">
+                    <h2>Past Coursework</h2>
+                    <button class="toggle-btn" aria-expanded="false">
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                </div>
+
+                <div class="courses-list">
+                    <ul>
+                        <li>Advanced Topics in Algorithms</li>
+                        <li>Data Structures and Algorithms</li>
+                        <li>Computer Architecture</li>
+                        <li>Systems Programming</li>
+                        <li>Competitive Programming I</li>
+                        <li>Programming in C</li>
+                        <li>Object-Oriented Programming</li>
+                        <li>Discrete Mathematics</li>
+                        <li>Linear Algebra</li>
+                        <li>Statistics</li>
+                        <li>Calculus I, II, and III</li>
+                        <li>Biochemistry</li>
+                        <li>Physics I</li>
+                        <li>Philosophy</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="academic-card">
+                <div class="academic-card-header">
+                    <h2>Current Coursework</h2>
+                    <button class="toggle-btn" aria-expanded="false">
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                </div>
+                <div class="courses-list">
+                    <ul>
+                        <li>Randomized Algorithms</li>
+                        <li>Operating Systems</li>
+                        <li>Competitive Programming II</li>
+                        <li>Databases & Information Systems</li>
+                        <li>Abstract Algebra</li>
+                    </ul>
+                </div>
+            </div>
+    </section>
+
+    <footer>
+        <p>Made by Madhav Valiyaparambil (had to put my full name somewhere, lol)</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
